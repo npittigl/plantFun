@@ -157,3 +157,35 @@ Orange - #ED6B55
 {
     display: block;
 }
+
+/* -------- PHOTO GALLERY ----------- */
+.photoGallery {
+    background: #234535;
+}
+
+.photoGallery h2 {
+    font-size: 40px;
+    padding: 20px 0;
+}
+
+.photoGalleryContainer {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.photoGalleryItem {
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.photoGalleryItem img {
+    width: 100%;
+    height: 300px;
+    padding: 10px;
+}
