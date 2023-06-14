@@ -77,3 +77,83 @@ Dark Green - #1f2d2e
 Light Green - #234534
 Orange - #ED6B55
  */
+
+/* Header Toggle Switch */
+
+/* Toggle Labels */
+.toggleLabel {
+    line-height: 40px;
+    padding-right: 100px;
+    margin: 15px 0;
+    position: relative;
+}
+
+[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+}
+
+/* use pseudo-elements to create a switch */
+.toggleLabel::before {
+    content: "";
+    width: 80px;
+    height: 40px;
+    background-color: #1f2d2e;
+    border-radius: 100px;
+    position: absolute;
+    right: 0;
+}
+
+/* switch style */
+.toggleLabel::after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 45px;
+    top: 5px;
+}
+
+[type="checkbox"]:checked + .toggleLabel::after {
+    right: 5px;
+}
+
+[type="checkbox"]:active + .toggleLabel::before,
+[type="checkbox"]:focus +.toggleLabel::before {
+    background-color: #ED6B55;
+}
+
+/* Our TAB area */
+.tabs {
+    background: #234534;
+}
+
+.tabs label {
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    display: block;
+}
+
+.tabs .contenct {
+    background-color: #FFF;
+}
+
+.tabs input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+}
+
+.content > div {
+    display: none;
+}
+
+/* make our content re-appear */
+#spider-tab:checked ~ .content .firstPlant,
+#snake-tab:checked ~ .content .secondPlant,
+#philo-tab:checked ~ .content .thirdPlant
+{
+    display: block;
+}

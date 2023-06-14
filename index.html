@@ -14,8 +14,115 @@
             <h1>House plants that even you cannot kill.</h1>
             <form class="feedbackForm">
                 <!-- WRITE YOUR INPUT MARK UP HERE -->
+
+                <!-- First Toggle -->
+                <input type="checkbox" id="alive-switch">
+                <label for="alive-switch" class="toggleLabel">Terrible at keeping alive</label>
+
+                <!-- Second Toggle -->
+                <input type="checkbox" id="water-switch">
+                <label for="water-switch" class="toggleLabel">Watering seems unnecessary</label>
+
+                <!-- Third Toggle -->
+                <input type="checkbox" id="thumb-switch">
+                <label for="thumb-switch" class="toggleLabel">Two black thumbs</label>
+
                 <button>Find Plants</button>
             </form>
         </header>
+
+        <!-- Main Section -->
+        <main id="mainContent"></main>
+            <div class="tabs">
+
+                <!-- Tab 1 -->
+                <input type="radio" id="spider-tab" name="tabs">
+                <label for="spider-tab">Spider Plant
+                    <i class="fas fa-angle-double-down" aria-hidden="true"></i>
+                </label>
+
+                <!-- Tab 2 -->
+                <input type="radio" id="snake-tab" name="tabs">
+                <label for="snake-tab">Snake Plant
+                    <i class="fas fa-angle-double-down" aria-hidden="true"></i>
+                </label>
+                
+                <!-- Tab 3 -->
+                <input type="radio" id="philo-tab" name="tabs">
+                <label for="philo-tab">Philodendron
+                    <i class="fas fa-angle-double-down" aria-hidden="true"></i>
+                </label>
+                
+                <section class="content">
+                    <!-- First Plant -->
+                    <div class="firstPlant plantContent" id="firstPlant">
+                        <figure class="imgContainer">
+                            <img src="./assets/spiderPlant.jpg" alt="A spider plant">
+                        </figure><!-- .imgContainer -->
+                    
+                        <figcaption class="plantDescription">
+                            <p>Chlorophytum comosum, often called spider plant but also known as airplane plant, St. Bernard's lily, spider
+                                ivy, ribbon plant, and hen and chickens is a species of perennial flowering plant. It is native to tropical
+                                and southern Africa, but has become naturalized in other parts of the world, including western Australia.
+                            </p>
+                            <p>Chlorophytum comosum is a popular houseplant. The species with all-green leaves forms only a small proportion
+                                of plants sold.</p>
+                            <p>More common are two variegated cultivars:</p>
+                            <ul>
+                                <li>
+                                    C. comosum 'Vittatum' has mid-green leaves with a broad central white stripe. It is often sold in
+                                    hanging baskets to display the plantlets. The long stems are white.
+                                </li>
+                                <li>
+                                    C. comosum 'Variegatum' has darker green leaves with white margins.
+                                </li>
+                            </ul>
+                        </figcaption><!-- .plantDescription -->
+                    </div><!-- .firstPlant -->
+                    
+                    <!-- Second Plant -->
+                    <div class="secondPlant plantContent" id="secondPlant">
+                    
+                        <figure class="imgContainer">
+                            <img src="./assets/snakePlant.jpg" alt="A Snake Plant">
+                        </figure><!-- .imgContainer -->
+                    
+                        <figcaption class="plantDescription">
+                            <p>It is an evergreen perennial plant forming dense stands, spreading by way of its creeping rhizome, which is
+                                sometimes above ground, sometimes underground. Its stiff leaves grow vertically from a basal rosette. Mature
+                                leaves are dark green with light gray-green cross-banding and usually range from 70–90 centimetres (28–35
+                                in) long and 5–6 centimetres (2.0–2.4 in) wide, though it can reach heights above 2 m (6 ft) in optimal
+                                conditions</p>
+                            <p>It is now used predominantly as an ornamental plant, outdoors in warmer climates, and indoors as a houseplant
+                                in cooler climates. It is popular as a houseplant because it is tolerant of low light levels and irregular
+                                watering; during winter it needs only one watering every couple of months. It will rot easily if
+                                overwatered.</p>
+                        </figcaption><!-- .plantDescription -->
+                    </div><!-- .secondPlant -->
+                    
+                    <!-- Third Plant -->
+                    <div class="thirdPlant plantContent" id="thirdPlant">
+                        <figure class="imgContainer">
+                            <img src="./assets/philedendron.jpg" alt="Philodendron Plant">
+                        </figure><!-- .imgContainer -->
+                    
+                        <figcaption class="plantDescription">
+                            <p>Philodendron is a large genus of flowering plants in the Araceae family. As of September 2015, the World
+                                Checklist of Selected Plant Families accepted 489 species; other sources accept different numbers.
+                                Regardless of number of species, the
+                                genus is the second-largest member of the Araceae family. Taxonomically, the genus Philodendron is still
+                                poorly known, with many undescribed species. Many are grown as ornamental and indoor plants.</p>
+                            <p>The name derives from the Greek words philo- or "love, affection" and dendron or "tree". They are commonly
+                                called by their generic name.</p>
+                            <p>Selected Species:</p>
+                            <ul>
+                                <li>Philodendron acutatum</li>
+                                <li>Philodendron auriculatum</li>
+                                <li>Philodendron balaoanum</li>
+                            </ul>
+                        </figcaption><!-- .plantDescription -->
+                    </div><!-- .thirdPlant -->
+                </section>
+            </div>
     </body>
 </html>
